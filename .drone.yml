@@ -13,8 +13,8 @@ steps:
   - echo hello world
 - name: build
   commands:
-  - go build
-  - ./drone-test
+  - go build main.go
+  - ./main
  
 
 trigger:
