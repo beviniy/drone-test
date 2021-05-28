@@ -14,7 +14,7 @@ steps:
 - name: build
   commands:
   - go build
-   - ./drone-test
+  - ./drone-test
  
 
 trigger:
