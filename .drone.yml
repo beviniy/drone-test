@@ -17,11 +17,11 @@ steps:
   - ./main
  
 
-trigger:
-  branch:
-    - main
-  event:
-    - pull_request
-    - push
+# trigger:
+#   branch:
+#     - main
+#   event:
+#     - pull_request
+#     - push
 
 
