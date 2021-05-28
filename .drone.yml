@@ -14,4 +14,9 @@ steps:
   - go run . > test_secret.txt
   - cat test_secret.txt
   
-branches: [main]
+trigger:
+  branch:
+    - main
+  event:
+    - pull_request
+    - push
