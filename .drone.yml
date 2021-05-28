@@ -11,7 +11,14 @@ steps:
 - name: greeting
   commands:
   - echo hello world
-  
+- name: build
+  image: golang
+  commands:
+  - go build
+- name: run
+  commands:
+  - ./drone-test
+
 trigger:
   branch:
     - main
