@@ -3,16 +3,14 @@ kind: pipeline
 type: exec
 name: default
 
+platform:
+  os: macos
+  arch: amd64
+
 steps:
-- name: build
-  image: golang
-  environment:
-    A_SECRET:
-      from_secret: a_secret
+- name: greeting
   commands:
-  - echo ?A_SECRET
-  - go run . > test_secret.txt
-  - cat test_secret.txt
+  - echo hello world
   
 trigger:
   branch:
