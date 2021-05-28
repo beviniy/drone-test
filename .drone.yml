@@ -4,7 +4,7 @@ type: exec
 name: default
 
 platform:
-  os: macos
+  os: darwin
   arch: amd64
 
 steps:
