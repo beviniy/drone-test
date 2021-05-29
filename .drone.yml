@@ -15,13 +15,4 @@ steps:
   commands:
   - go build main.go
   - ./main
- 
-
-# trigger:
-#   branch:
-#     - main
-#   event:
-#     - pull_request
-#     - push
-
 
